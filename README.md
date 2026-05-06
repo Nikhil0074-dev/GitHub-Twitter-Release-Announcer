@@ -1,5 +1,5 @@
 
-# 🐦 GitHub → Twitter Release Announcer
+#  GitHub → Twitter Release Announcer
 
 Automatically posts a tweet on **X (Twitter)** every time you publish a new release on GitHub.
 
@@ -19,7 +19,7 @@ JSON log saved
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Details |
 |---|---|
@@ -32,7 +32,7 @@ JSON log saved
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Fork / clone this repo
 
@@ -61,11 +61,11 @@ In your GitHub repo → **Settings → Secrets → Actions**, add:
 ### 4. Publish a release
 
 Go to **Releases → Draft a new release**, fill in the tag and notes, and click **Publish**.  
-The workflow fires automatically and posts your tweet. 🎉
+The workflow fires automatically and posts your tweet. 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 github-twitter-announcer/
@@ -98,7 +98,7 @@ github-twitter-announcer/
 
 ---
 
-## ⚙️ Configuration (`config/config.yaml`)
+##  Configuration (`config/config.yaml`)
 
 ```yaml
 tweet:
@@ -111,7 +111,7 @@ tweet:
 
 ---
 
-## 📝 Tweet Format
+##  Tweet Format
 
 Given a release with these notes:
 
@@ -125,25 +125,25 @@ Improved dashboard performance
 The announcer produces:
 
 ```
-🚀 New Release: My App (v2.1.0)
+ New Release: My App (v2.1.0)
 
-⚠️ Breaking Changes:
+ Breaking Changes:
 • Removed legacy /v1 endpoint
 
-✨ What's New:
+ What's New:
 • Added payment integration
 • Improved dashboard performance
 
-🐛 Fixes:
+ Fixes:
 • Fixed login crash
 
-🔗 https://github.com/user/repo/releases/tag/v2.1.0
+ https://github.com/user/repo/releases/tag/v2.1.0
 #opensource #devupdate #github
 ```
 
 ---
 
-## 🧪 Running Tests Locally
+##  Running Tests Locally
 
 ```bash
 # Install dependencies
@@ -158,7 +158,7 @@ pytest tests/ -v --cov=src --cov-report=term-missing
 
 ---
 
-## 🔧 Local Testing
+##  Local Testing
 
 ```bash
 # Copy and fill in credentials
@@ -175,14 +175,10 @@ source .env && python src/main.py
 
 ---
 
-## 🛡️ Security Notes
+##  Security Notes
 
 - API credentials are stored **only** in GitHub Secrets — never in code
 - The `.env` file is gitignored; commit only `.env.example`
 - `logs/last_posted.json` is gitignored (contains tweet IDs)
 
 ---
-
-## 📜 License
-
-MIT
