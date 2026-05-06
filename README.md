@@ -1,5 +1,5 @@
 
-#  GitHub → Twitter Release Announcer
+#  GitHub -Twitter Release Announcer
 
 Automatically posts a tweet on **X (Twitter)** every time you publish a new release on GitHub.
 
