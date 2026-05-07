@@ -1,5 +1,5 @@
 
-#  GitHub -Twitter Release Announcer
+#  GitHub - Twitter Release Announcer
 
 Automatically posts a tweet on **X (Twitter)** every time you publish a new release on GitHub.
 
@@ -37,8 +37,7 @@ JSON log saved
 ### 1. Fork / clone this repo
 
 ```bash
-git clone https://github.com/your-org/github-twitter-announcer.git
-cd github-twitter-announcer
+cd  GitHub-Twitter-Release-Announcer
 ```
 
 ### 2. Create a Twitter Developer App
@@ -137,8 +136,7 @@ The announcer produces:
  Fixes:
 • Fixed login crash
 
- https://github.com/user/repo/releases/tag/v2.1.0
-#opensource #devupdate #github
+
 ```
 
 ---
@@ -158,22 +156,7 @@ pytest tests/ -v --cov=src --cov-report=term-missing
 
 ---
 
-##  Local Testing
 
-```bash
-# Copy and fill in credentials
-cp .env.example .env
-
-# Set release vars manually
-export RELEASE_TAG=v1.0.0
-export RELEASE_URL=https://github.com/you/repo/releases/tag/v1.0.0
-export RELEASE_BODY="Added dark mode\nFixed crash on startup"
-
-# Load .env and run
-source .env && python src/main.py
-```
-
----
 
 ##  Security Notes
 
