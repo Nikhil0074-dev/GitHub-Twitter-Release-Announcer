@@ -1,0 +1,6 @@
+tweepy
+requests
+PyYAML
+python-dotenv
+pytest
+pytest-cov
