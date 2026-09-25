@@ -1,0 +1,16 @@
+# config.yaml — GitHub → Twitter Release Announcer configuration
+
+tweet:
+  # Maximum number of bullet points shown per section (features / fixes / breaking)
+  max_body_lines: 4
+
+  # Hashtags appended to every tweet (without the # prefix)
+  hashtags:
+    - opensource
+    - devupdate
+    - github
+
+# (Optional) Override tweet template sections
+# template:
+#   header: "🚀 New Release: {name} ({tag})"
+#   footer: "🔗 {url}"
